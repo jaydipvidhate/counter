@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <style>
+      .movement {
+        width: 500px;
+        height: 300px;
+        border: 10px solid rgb(255, 196, 0);
+        margin-top: 20px;
+      }
+      .bubble div {
+        padding: 10px;
+        margin: 40px;
+        border: 4px solid black;
+      }
+      input {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="value">0</h1>
+    <div>
+      <button class="increment">Increment</button>
+      <button class="decrement">Decrement</button>
+      <button class="reset">Reset</button>
+    </div>
+    <section>
+      <input type="submit" value="Click" />
+    </section>
+    <div style="background-color: rgb(238, 255, 127)" class="movement">
+      <h2 class="first">103</h2>
+      <h2 class="second">104</h2>
+      <h2 class="third">105</h2>
+      <h2 class="fourth">106</h2>
+    </div>
+    <section class="bubble">
+      <div onclick="console.log('div 1')">
+        div 1
+        <div onclick="console.log('div 2')">
+          div 2
+          <div onclick="console.log('div 3')">
+            div 3
+            <div onclick="console.log('div 4')">div 4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+    <script>
+      function upToFour() {
+        console.log(event.target.value);
+      }
+    </script>
+  </body>
+</html>
